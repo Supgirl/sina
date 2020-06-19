@@ -79,6 +79,55 @@
     display: flex;
     justify-content: space-between;
 }
+.ifeng-sec .text1{
+    flex: 1;
+    /*控制子元素-垂直排列-两端对齐*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+}
+.ifeng-sec .text1 h2{
+    /*超过两行省略号*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 0.69rem;
+}
+.ifeng-sec .text1 p{
+    /*水平方向两端对齐*/
+    display: flex;
+    justify-content: space-between;
+}
+.ifeng-th{
+    border-bottom: 1px splid#e4e4e4;
+    padding: .24rem .3rem;
+}
+.ifeng-th .pic1{
+    display: flex;
+    justify-content: space-evenly;  
+    width: 1.12rem;
+    height: 0.77rem;
+    margin:0 0;
+    padding: 0 0;
+}
+.ifeng-th .pic1 img{  
+    width: 100%;
+    height: 100%;
+}
+.ifeng-th .wz h2{
+    /* 超过两行省略号 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.ifeng-th .wz p{
+    /*水平方向两端对齐*/
+    display: flex;
+    justify-content: space-between;
+}
+
 @font-face{
     font-family: 'SinaHomeFont';
     src: url('../font/SinaHomeFont.7fcdfd2c.eot'); 
