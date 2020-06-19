@@ -1,0 +1,113 @@
+/* logo */
+.ifeng-hd{
+   height: 0.8rem;
+   overflow: hidden;
+}
+.ifeng-hd img{
+    display: block;
+    width: 1.95rem;
+    height: 0.37rem;
+    margin:0.22rem auto;
+    /* margin-top 方向传递问题 - 解决办法: 父元素overflow:hidden */
+}
+/* nav */
+.ifeng-nav{
+    height: .8rem;
+    line-height: .8rem;
+    /* 用子父元素身上 - 控制子元素的排列方式 -  水平(默认) */
+    display: flex;
+}
+.ifeng-nav a{
+    /* 平分 各占一等份 1/5   100% / 5  = 20%   flex:1; */
+    padding:0 .27rem;
+    text-align: center;
+    color:#727272;
+    font-size:.36rem;
+}
+.ifeng-nav .current{
+    color:#F44343;
+}
+/* swiper */
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-pagination{
+    /* 100% + .3rem > 100% 超出 */
+    padding-right:.3rem;
+    box-sizing: border-box;
+    text-align: right;
+    color:#004175;
+    font-size:0.2rem;
+}
+.swiper-pagination-current{
+    font-size:0.36rem;
+    color:#F44343;
+}
+
+/* 左图右文 */
+.ifeng-sec{
+    display: flex;
+    border-bottom: 1px splid#e4e4e4;
+    padding: .24rem .3rem;
+}
+.ifeng-sec .pic{
+    width: 1.82rem;
+    height: 1.3rem;
+    margin:0 0;
+    padding-right: 0.32rem;
+}
+.ifeng-sec .pic img{
+    width: 100%;
+    height: 100%;
+}
+.ifeng-sec .text{
+    flex: 1;
+    /*控制子元素-垂直排列-两端对齐*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+}
+.ifeng-sec .text h2{
+    /*超过两行省略号*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.ifeng-sec .text p{
+    /*水平方向两端对齐*/
+    display: flex;
+    justify-content: space-between;
+}
+@font-face{
+    font-family: 'SinaHomeFont';
+    src: url('../font/SinaHomeFont.7fcdfd2c.eot'); 
+    src: url('../font/SinaHomeFont.7fcdfd2c.svg') format('embedded-opentype'),
+    url('../font/SinaHomeFont.7fcdfd2c.ttf') format('truetype'),
+    url('../font/SinaHomeFont.7fcdfd2c.woff')  format('woff'),
+    url('../font/SinaHomeFont.7fcdfd2c.woff2') format('svg');
+}
+/* 第二步: 引入公用的样式*/
+.icon-font{
+    font-family: 'SinaHomeFont';
+    font-weight:normal;
+    font-style:normal;
+    
+    /*解决字体图标锯齿和不清晰的情况*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.icon-com::before{
+    content: '\E90D';
+}
+
+
+
+
+
+
+
+
+
+
+
